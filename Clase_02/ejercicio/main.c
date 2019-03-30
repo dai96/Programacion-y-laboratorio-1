@@ -22,6 +22,54 @@
 #include <stdlib.h>
 
 
+
+int main ()
+{
+
+    int nums;
+    int acumulador;
+    float promedio;
+    int max;
+    int min;
+    int i;
+
+
+    printf("Porfavor ingrese un numero ");
+    scanf("%d", &nums);
+    max= nums;
+    min= nums;
+    acumulador=nums;
+
+    for (i=1;i<=4;i++)
+    {
+       printf("Porfavor ingrese un numero ");
+       scanf("%d", &nums);
+       if (nums<min)
+       {
+           min=nums;
+       }
+       if (nums>max)
+       {
+           max=nums;
+       }
+       acumulador=acumulador+nums;
+    }
+
+    printf("El numero maximo es: %d\n", max);
+    printf("El numero minimo es: %d\n", min);
+
+    promedio=acumulador/5;
+
+    printf("El promedio es: %.2f\n", promedio);
+
+
+
+
+}//resuelto por mi
+
+
+//resuelto por davila
+/*
 int main()
 {
     int maximo;
@@ -60,5 +108,6 @@ int main()
     printf("El minimo es: %i\n",minimo);
     printf("El promedio es: %f\n", ((float)acumulador) / 5);
     return 0;
+    */
 
-}
+

@@ -25,36 +25,37 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Prototipos de las funciones
-float pedirNumero();
-float calcularAreaCirculo(float radio);
+
+float pedirNumero ();
+float calcularArea (float radio);
+float num;
+float area;
 
 
-int main()
+int main ()
 {
-    float auxiliar_float;
-    float area;
+    float auxNum;
+    float auxRad;
 
-    auxiliar_float = pedirNumero();
-    area = calcularAreaCirculo(auxiliar_float);
-    printf("El area del circulo es: %.2f\n",area);
-    return 0;
+    auxNum = pedirNumero();
+    auxRad = calcularArea(auxNum);
+
+    printf("\nEl area del circulo es: %.2f\n",auxRad);
+
 }
-
 
 /**
- * \brief Solicita un número y lo retorna
- * \return Número ingresado por el usuario
+ * \brief Pide un numero al usuario y lo devuelve
+ * \return Numero que pide
  *
  */
-float pedirNumero()
-{
-    float auxiliar;
-    printf("Ingrese un numero: ");
-    scanf("%f",&auxiliar);
-    return auxiliar;
-}
 
+float pedirNumero ()
+{
+    printf("Ingrese un numero: ");
+    scanf("%f", &num);
+    return num;
+}
 
 /**
  * \brief Recibe el radio y calcula el área del círculo
@@ -62,9 +63,9 @@ float pedirNumero()
  * \return El área del círculo
  *
  */
-float calcularAreaCirculo(float radio)
+
+float calcularArea (float radio)
 {
-    float resultado;
-    resultado = 3.14 * radio * radio;
-    return resultado;
+    area=num*3.1416*num;
+    return area;
 }

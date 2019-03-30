@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553960433 source:c:\users\daira\desktop\programacion-y-laboratorio-1-master\clase_04\ejercicioresuelto\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
