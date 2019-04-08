@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1554242694 source:c:\users\daira\desktop\programacion-y-laboratorio-1-master\clase_05\ejercicio para entregar\ejercicio de carga secuencial\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1554727247 source:c:\users\alumno\desktop\ejercicio-vectores-1c-master\ejercicio de carga secuencial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
