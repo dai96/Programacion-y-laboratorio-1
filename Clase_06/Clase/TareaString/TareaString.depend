@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1554765629 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_06\clase\tarea\tareastring\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

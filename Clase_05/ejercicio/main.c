@@ -1,20 +1,20 @@
-/******************************************************************
-* Programa: Ejemplo Clase 5
-*
-* Objetivo:
-*   Solicitar al usuario 5 números, permitir listarlos por pantalla
-*   indicando el máximo, el mínimo y el promedio
-*   Permitir Modificar el valor de cualquiera de los números cargados
-*   indicando el índice del mismo y su nuevo valor.
-*
-* Aspectos a destacar:
-*   -Utilización de array
-*
-* Version: 0.1 del 29 diciembre de 2015
-* Autor: Mauricio Dávila
-* Revisión: Ernesto Gigliotti
-*
-* *******************************************************************/
+/**********************************************************************\
+* Programa: Ejemplo Clase 5                                           *
+*                                                                     *
+* Objetivo:                                                           *
+*   Solicitar al usuario 5 números, permitir listarlos por pantalla   *
+*   indicando el máximo, el mínimo y el promedio                      *
+*   Permitir Modificar el valor de cualquiera de los números cargados *
+*   indicando el índice del mismo y su nuevo valor.                   *
+*                                                                     *
+* Aspectos a destacar:                                                *
+*   -Utilización de array                                             *
+*                                                                     *
+* Version: 0.1 del 29 diciembre de 2015                               *
+* Autor: Mauricio Dávila                                              *
+* Revisión: Ernesto Gigliotti                                         *
+*                                                                     *
+\**********************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,6 +22,86 @@
 #include "utn.h"
 
 #define CANTIDAD 5 // constante con tamaño del array
+
+
+void cargarvector (int vec [],int tam);
+void mostrarVector (int vec [],int tam);
+
+int main ()
+{
+
+    int nums [CANTIDAD];
+    cargarvector(nums,CANTIDAD);
+    mostrarVector(nums,CANTIDAD);
+
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+void cargarvector (int vec [],int tam)
+{
+    int i;
+    for (i=0;i<tam;i++)
+    {
+        printf("Ingrese un numero: ");
+        scanf("%d",&vec[i]);
+    }
+
+}
+
+void mostrarVector (int vec [],int tam)
+{
+    int i;
+    for (i=0;i<tam;i++)
+    {
+        printf("%d|",vec[i]);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 
 int main()
 {
@@ -68,3 +148,4 @@ int main()
     return 0;
 }
 
+*/

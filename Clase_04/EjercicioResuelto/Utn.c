@@ -21,11 +21,18 @@ float getFloat(char mensaje [])
     return aux;
 }
 
-int getChar(char mensaje [])
+char getChar(char mensaje [])
 {
     char aux;
     printf("%s",mensaje);
     fflush(stdin);
     scanf("%c", &aux);
     return aux;
+}
+
+char getNumeroAleatorio(int desde , int hasta, int iniciar)
+{
+    if(iniciar)
+        srand (time(NULL));
+    return desde + (rand() % (hasta + 1 - desde)) ;
 }

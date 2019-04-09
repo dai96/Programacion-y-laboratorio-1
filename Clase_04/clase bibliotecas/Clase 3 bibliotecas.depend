@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1553603536 source:c:\users\alumno\desktop\clase 3\clase 3 bibliotecas\main.c
+	<stdlib.h>
+	"ingresos.h"
+
+1553605028 c:\users\alumno\desktop\clase 3\clase 3 bibliotecas\ingresos.h
+
+1553603272 source:c:\users\alumno\desktop\clase 3\clase 3 bibliotecas\ingresos.c
+	<stdio.h>
+	"ingresos.h"
+
+1553603272 source:c:\users\alumno\desktop\clase 4\clase 4 bibliotecas\ingresos.c
+	<stdio.h>
+	"ingresos.h"
+
+1553605028 c:\users\alumno\desktop\clase 4\clase 4 bibliotecas\ingresos.h
+
+1553607123 source:c:\users\alumno\desktop\clase 4\clase 4 bibliotecas\recursividad.c
+	"recursividad.h"
+
+1553606158 c:\users\alumno\desktop\clase 4\clase 4 bibliotecas\recursividad.h
+
+1554132913 source:c:\users\daira\desktop\1ercuatrimestre-master\clase 4\clase 4 bibliotecas\ingresos.c
+	<stdio.h>
+	"ingresos.h"
+
+1554132913 c:\users\daira\desktop\1ercuatrimestre-master\clase 4\clase 4 bibliotecas\ingresos.h
+
+1554132913 source:c:\users\daira\desktop\1ercuatrimestre-master\clase 4\clase 4 bibliotecas\main.c
+	<stdlib.h>
+	"ingresos.h"
+	"recursividad.h"
+
+1554265496 c:\users\daira\desktop\1ercuatrimestre-master\clase 4\clase 4 bibliotecas\recursividad.h
+
+1554132913 source:c:\users\daira\desktop\1ercuatrimestre-master\clase 4\clase 4 bibliotecas\recursividad.c
+	"recursividad.h"
+

@@ -11,8 +11,8 @@ int main()
     //printf("Ingrese una palabra ");
     //gets(palabra);
 
-    strcpy(palabra,otrapalabra);
-    len=strlen(palabra);
+    strcpy(palabra,otrapalabra);//copiar
+    len=strlen(palabra);//longitud de la palabra
     otrapalabra=strlwr(palabra);
 
     comp=stricmp(palabra,"Hola");
@@ -33,9 +33,4 @@ int main()
 
 
 
-par amañana pedir al user el nombre y apellido en variables aparte
-y una tercer variable apellidonombre donde concatenare apellido y nombre
 
-miñarro, daira
-y las primeras m y d en mayus
-:O :O :O :O

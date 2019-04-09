@@ -30,28 +30,55 @@
 #include "utn.h"
 
 
-int num;
-int continuar='s';
+int num, numeroAleatorio, jugar;
+char seguir;
+
 
 
 main()
 {
+
     printf("--------------------Bienvenido al adivinador de tu numero!!!----------------------");
     getchar();
     system("cls");
-
-  do
+    seguir='s';
+    while (seguir=='s')
     {
-        getInt("Ingrese un numero positivo para jugar o un numero negativo para terminar: ")
+        printf("\n\n-->Se generara un numero aleatorio del 1 al 100 \n-->Siempre ingresa numeros positivos para jugar y numero negativos para terminar");
 
+        numeroAleatorio=getNumeroAleatorio(1,100,1);
 
+        printf("\n--------------------------------------");
+        printf("\n\nEl numero fue generado!");
+        printf("\n--------------------------------------\n\n");
+        system("pause");
+        jugar=1;
+        system("cls");
 
+        while (jugar)
+        {
+            num=getInt("\nIngrese un numero: ");
+            if (num<0)
+                jugar=0;
+            else if (num==0)
+                printf("\nEl numero no puede ser 0\n");
+            else if (num<numeroAleatorio)
+                printf("\nIntanta con un numero mas grande\n");
+            else if (num>numeroAleatorio)
+                printf("\nIntanta con un numero mas chico\n");
+            else if (num==numeroAleatorio)
+            {
+                printf("\nfelicidades, ganaste, el numero era %d\n",numeroAleatorio);
+                jugar=0;
+            }
+        }
 
-
-
+        seguir=getChar("Quieres volver a jugar? s/n : ");
+        while (seguir!='s' && seguir!='n')
+        {
+            printf("Error! ingresa s o n");
+            seguir=getChar("\nQuieres volver a jugar? s/n : ");
+        }
     }
-    while (num<0);
-
-
-
+        return 0;
 }
