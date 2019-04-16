@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1555340744 source:c:\users\alumno\desktop\claseocho\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1555422579 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_08\claseocho\funciones.c
+	"funciones.h"
+
+1555422726 c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_08\claseocho\funciones.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1555422568 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_08\claseocho\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
