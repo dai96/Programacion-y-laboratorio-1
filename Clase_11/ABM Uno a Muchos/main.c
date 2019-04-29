@@ -16,18 +16,22 @@ Informes:
 int main()
 {
 
-    int indice;
+    int indice,i;
     int opcion;
 
     eEmpleado lista[T];
+    eSector listaSector[T];
     inicializarEmpleados(lista,T);
 
-    eSector sectores[3] = {{1,"Contabilidad",100},{2,"Sistemas",200},{3, "RRHH", 150}};
+    //eSector sectores[3] = {{1,"Contabilidad",100},{2,"Sistemas",200},{3, "RRHH", 150}};
+
 
 
 
 
 hardcodearDatosEmpleados(lista,6);
+hardcodearDatosSector(listaSector);
+
     do
     {
         opcion = menuDeOpciones("1.Alta\n2.Baja\n3.Modificar\n4.Mostrar\n5.Informar\n10.Salir\nElija una opcion: ");
@@ -46,7 +50,7 @@ hardcodearDatosEmpleados(lista,6);
             break;
 
             case 4:
-                mostrarListaEmpleados(lista, T, sectores, 3);
+                mostrarListaEmpleados(lista, T, listaSector, 3);
                 break;
             case 5:
 

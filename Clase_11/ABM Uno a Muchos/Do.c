@@ -6,4 +6,8 @@ particular a otro sector.
 5. Resolver el calculo de sueldo bruto y neto. Teniendo en cuenta que si el
 empleado trabaja en varios sectores el sueldo resultara de la suma del producto de las
  horas trabajadas por el valor hora de cada sector
+
+buscar el sector con mas empleados
+
+
 */

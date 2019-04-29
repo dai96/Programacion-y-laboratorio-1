@@ -14,9 +14,8 @@ typedef struct
 typedef struct
 {
     int idSector;
-
     char descripcion[20];
-     float valor;
+    float valor;
 
 }eSector;
 
@@ -31,12 +30,18 @@ typedef struct
     float sueldoBruto;
     float sueldoNeto;
 
-
-
-
     int estado;
 
 } eEmpleado;
+
+typedef struct
+{
+    int idSector;
+
+    char descripcion[20];
+     float valor;
+
+}eAux;
 
 void mostrarEmpleado(eEmpleado, eSector[], int);
 void cargarEmpleado(eEmpleado[], int);
@@ -56,6 +61,11 @@ int contarCarlos(eEmpleado[],int);
 int idIncremental(eEmpleado lista[],int limite);
 
 
+
+
+
+/*---------------------*/
+void mostrarUno(eEmpleado lista[],int i);
 
 
 

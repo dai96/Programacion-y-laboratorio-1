@@ -1,39 +1,34 @@
-
 #include "Empleado.h"
-
-
 void cargarEmpleado(eEmpleado lista[], int tam)
 {
     int i;
+    char aceptar;
 
     i = buscarLibre(lista, tam);
     if(i!=-1)
     {
-        /*printf("Ingrese legajo: ");
-        scanf("%d", &lista[i].legajo);*/
         lista[i].legajo=idIncremental(lista,tam);
         getNombres("nombre",lista[i].nombre);
-        printf("Ingrese sexo: ");
-        fflush(stdin);
-        scanf("%c", &lista[i].sexo);
-        printf("Ingrese sueldo bruto: ");
-        scanf("%f", &lista[i].sueldoBruto);
-
+        lista[i].sexo=getCaracter("sexo, F o M");
+        lista[i].sexo=toupper(lista[i].sexo);
+        lista[i].sueldoBruto=getInt("sueldo bruto");
         lista[i].sueldoNeto =lista[i].sueldoBruto*0.85;
-
-        lista[i].estado = OCUPADO;
         lista[i].idSector=getInt("sector \n\n1-Cont\n2-Sist\n3-rrhh\n");
-
+        printf("Está seguro que desea agregar estos datos?");
+        mostrarUno(lista,i);
+        aceptar=getCaracter("s/n");
+        if (aceptar=='s')
+        {
+            lista[i].estado = OCUPADO;
+            printf("Dato cargado!");
+        }
     }
     else
     {
         printf("No hay espacio");
     }
 
-
-
 }
-
 void mostrarListaEmpleados(eEmpleado lista[], int tam, eSector sectores[], int ts)
 {
     int i;
@@ -91,7 +86,6 @@ void inicializarEmpleados(eEmpleado lista[], int tam)
         lista[i].estado = LIBRE;
     }
 }
-
 void hardcodearDatosEmpleados(eEmpleado lista[], int tam)
 {
     int i;
@@ -115,20 +109,20 @@ void hardcodearDatosEmpleados(eEmpleado lista[], int tam)
     }
 
 }
-
-void hardcodearDatosSector(eSector lista[], int tam)
+void hardcodearDatosSector(eSector lista[])//, int tam)
 {
-    int i;
-    float valor[]= {1,8,9,7,2,4};
-    int sector[]={1,2,3,1,2,2};
+    int i, sector[]={1,2,3};
+    char descripcion[][50]={"Contabilidad","Sistemas","RRHH"};
+    float valor[]= {100,200,150};
 
-    for(i=0; i<tam; i++)
+
+    for(i=0; i<3/*tam*/;i++)
     {
+        strcpy(lista[i].descripcion,descripcion[i]);
         lista[i].idSector = sector[i];
         lista[i].valor = valor[i];
     }
 }
-
 void modificar(eEmpleado lista[], int tam)
 {
     int index;
@@ -147,7 +141,6 @@ void modificar(eEmpleado lista[], int tam)
         printf("Error, legajo no existe\n");
 
 }
-
 void borrarEmpleado(eEmpleado lista[], int tam, int legajo)
 {
 
@@ -176,7 +169,6 @@ void borrarEmpleado(eEmpleado lista[], int tam, int legajo)
     }
 
 }
-
 float buscarSueldoMaximo(eEmpleado lista[], int tam)
 {
     float maximo;
@@ -218,7 +210,6 @@ void mostrarEmpleadosSueldoMaximo(eEmpleado lista[], int tam)
     }
 
 }
-
 int contarCarlos(eEmpleado lista[], int tam)
 {
     int contadorCarlos = 0;
@@ -237,9 +228,6 @@ int contarCarlos(eEmpleado lista[], int tam)
 
     return contadorCarlos;
 }
-
-
-
 int buscarLegajo(eEmpleado lista[], int tam)
 {
     int aux,i,retorno=-1;
@@ -252,7 +240,6 @@ int buscarLegajo(eEmpleado lista[], int tam)
     }
     return retorno;
 }
-
 int idIncremental(eEmpleado lista[],int limite)
 {
     int retorno = 0;
@@ -275,3 +262,34 @@ int idIncremental(eEmpleado lista[],int limite)
     return retorno+1;///y retorna el lugar siguiente
 }
 
+/*
+buscarSectorConMas (eSector sector[],eEmpleado empleado[],ts,te,eAux aux[])
+{
+    int i,j, flag;
+
+    for (i=0;i<ts;i++)
+    {
+        for (j=0;j<te;j++)
+        {
+            if (aux[i].idSector==empleado[j])
+            {
+                aux[i].contadorEmpleado++;
+            }
+        }
+    }
+    for (i=0;i<ts;i++)
+    {
+        if (flag==0 || aux[i].contadorEmpleados>maximo)
+        {
+            maximo=aux[i].contadorEmpleados;
+            flag=1;
+        }
+    }
+}
+*/
+
+void mostrarUno(eEmpleado lista[],int i)
+{
+    //if (lista[i].estado==OCUPADO)
+        printf("\n%d %s %c %.2f ",lista[i].legajo,lista[i].nombre,lista[i].sexo,lista[i].sueldoNeto);
+}
