@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1556429176 source:c:\users\daira\desktop\trabajo\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1556429272 c:\users\daira\desktop\trabajo\funciones.h
+
+1556479377 source:c:\users\daira\desktop\trabajo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+	"eEmpleado.h"
+
+1556479568 c:\users\daira\desktop\trabajo\eempleado.h
+
+1556479324 source:c:\users\daira\desktop\trabajo\eempleado.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+	"eEmpleado.h"
+
