@@ -1,0 +1,89 @@
+# depslib dependency file v1.0
+1555945588 source:c:\users\alumno\desktop\abm\main.c
+	<stdlib.h>
+	"Empleado.h"
+
+1555973284 c:\users\alumno\desktop\abm\empleado.h
+	<stdio.h>
+
+1555946157 source:c:\users\alumno\desktop\abm\empleado.c
+	"Empleado.h"
+
+1556481008 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\main.c
+	<stdlib.h>
+	"Empleado.h"
+	"funciones.h"
+
+1556481029 c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\empleado.h
+	<stdio.h>
+	"funciones.h"
+
+1555979422 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\do.c
+
+1555975129 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\empleado.c
+	"Empleado.h"
+
+1556479640 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1556479609 c:\users\daira\desktop\programacion-y-laboratorio-1\clase_10\abm uno a muchos\funciones.h
+
+1556505722 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1556505722 c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\funciones.h
+
+1556505722 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\main.c
+	<stdlib.h>
+	"Empleado.h"
+	"funciones.h"
+
+1556544517 c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\empleado.h
+	<stdio.h>
+	"funciones.h"
+
+1556542714 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\do.c
+
+1556550102 source:c:\users\alumno\desktop\programacion-y-laboratorio-1-master\clase_11\abm uno a muchos\empleado.c
+	"Empleado.h"
+
+1557171451 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\do.c
+
+1557223669 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\empleado.c
+	"Empleado.h"
+
+1557224188 c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\empleado.h
+	<stdio.h>
+	"funciones.h"
+
+1557224468 c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\funciones.h
+
+1557223666 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1557221886 source:c:\users\daira\desktop\programacion-y-laboratorio-1\clase_11\abm uno a muchos\main.c
+	<stdlib.h>
+	"Empleado.h"
+	"funciones.h"
+
