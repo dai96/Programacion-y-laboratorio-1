@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1557229830 source:d:\parcial daira\minarrodaira1erparcial\actores.c
+
+1557231655 source:d:\parcial daira\minarrodaira1erparcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1557239783 source:d:\parcial daira\minarrodaira1erparcial\main.c
+	<stdlib.h>
+	"peliculas.h"
+	"funciones.h"
+
+1557239782 d:\parcial daira\minarrodaira1erparcial\peliculas.h
+	<stdio.h>
+	"funciones.h"
+
+1557229509 d:\parcial daira\minarrodaira1erparcial\funciones.h
+
+1557239744 source:d:\parcial daira\minarrodaira1erparcial\peliculas.c
+	"peliculas.h"
+
