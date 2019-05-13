@@ -32,7 +32,7 @@ char getCaracter (char mensaje []);
  * \return
  *
  */
-void getString(char mensaje [],char vec[]);
+void getString(char mensaje [],char vec[],int maximoCaracteres, char validacion[]);
 
 /** \brief
  *
@@ -77,7 +77,8 @@ int esSoloLetras(char str[]);
  * \return
  *
  */
-void validarString (char validar [], int tam, char solicita[]);
+
+char validarString (char validar [], int tam, char solicita[]);
 
 /** \brief
  *
@@ -87,3 +88,9 @@ void validarString (char validar [], int tam, char solicita[]);
  *
  */
 char son (void);
+
+int validarMes(int mes, int dia);
+
+int validarNumeros (int dato, int minimo, int maximo);
+
+int menuDeOpciones(char mensaje[]);

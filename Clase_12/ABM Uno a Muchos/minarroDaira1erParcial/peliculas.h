@@ -21,8 +21,7 @@ typedef struct
 typedef struct
 {
     int id;
-    char titulo[30];
-    int fecha;
+    char titulo[51];
     int idGenero;
     int idActor;
     int estado;
@@ -43,21 +42,21 @@ typedef struct
  * \param estructura 1, estructura 2
  * \param tamaño de estructura 2
  */
-//void mostrarEmpleado(ePelicula, eSector[], int);
+void mostrarPelicula(ePelicula una, eActor actores[], int ta, eGenero generos[], int tg, eFecha estreno[]);
 
 /** \brief Alta
  *
  * \param estructura
  * \param tamaño
  */
-void altaPelicula(ePelicula[], int);
+void altaPelicula(ePelicula lista[], int tam);
 
 /** \brief mostrar la lista
  *
  * \param estructura 1 estructura 2
  * \param tamaño e1 tamaño e2
  */
-//void mostrarListaEmpleados(ePelicula[], int, eSector[], int);
+void mostrarListaPeliculas(ePelicula lista[], int tam, eActor actores[], int ta, eGenero generos[],int tg, eFecha estreno[]);
 
 /** \brief busca lugares en el array id
  *
@@ -80,7 +79,11 @@ void inicializarPeliculas(ePelicula[], int);
  * \param estructura
  * \param entero tamaño
  */
-void hardcodearDatosEmpleados(ePelicula[], int,eFecha []);
+void hardcodearPeliculas(ePelicula lista[], int tam, eFecha estrenos[]);
+
+void hardcodearDatosGenero(eGenero lista[]);
+
+void hardcodearDatosActor(eActor lista[]);
 
 /** \brief modificas datos de estructura
  *
@@ -105,7 +108,7 @@ int buscarLegajo(ePelicula[], int);
  * \return
  *
  */
-void borrarEmpleado(ePelicula[], int, int);
+void baja(ePelicula[], int, int);
 
 /** \brief
  *
@@ -114,7 +117,6 @@ void borrarEmpleado(ePelicula[], int, int);
  * \return
  *
  */
-float buscarSueldoMaximo(ePelicula[],int);
 
 /** \brief
  *
@@ -123,7 +125,6 @@ float buscarSueldoMaximo(ePelicula[],int);
  * \return
  *
  */
-void mostrarEmpleadosSueldoMaximo(ePelicula[],int);
 
 /** \brief
  *
@@ -132,7 +133,7 @@ void mostrarEmpleadosSueldoMaximo(ePelicula[],int);
  * \return
  *
  */
-int contarCarlos(ePelicula[],int);
+
 
 /** \brief
  *
@@ -150,7 +151,7 @@ int idIncremental(ePelicula lista[],int limite);
  * \return
  *
  */
-void mostrarUno(ePelicula lista[],int i);
+
 
 /** \brief
  *
@@ -161,5 +162,7 @@ void mostrarUno(ePelicula lista[],int i);
  */
 void ordenarVectorAlfabeticamente(ePelicula lista [], int tam);
 
-
-
+int sortActores(eActor list[], int len, int order);
+void mostrarListaDeActores(eActor actores[],int ta);
+int sortPeliculas(ePelicula list[], int len, int order);
+void hardcodearFecha(eFecha estreno[], int tam, int indice);
