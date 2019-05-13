@@ -51,3 +51,29 @@
 1557718725 source:c:\users\daira\desktop\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\peliculas.c
 	"peliculas.h"
 
+1557719186 source:d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\actores.c
+
+1557719186 source:d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<strings.h>
+	<string.h>
+	<conio.h>
+	<ctype.h>
+	"funciones.h"
+
+1557719186 d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\funciones.h
+
+1557756968 source:d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\main.c
+	<stdlib.h>
+	"peliculas.h"
+	"funciones.h"
+
+1557753258 d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\peliculas.h
+	<stdio.h>
+	"funciones.h"
+
+1557756727 source:d:\parcial daira\programacion-y-laboratorio-1-master\clase_12\abm uno a muchos\minarrodaira1erparcial\peliculas.c
+	"peliculas.h"
+

@@ -166,3 +166,5 @@ int sortActores(eActor list[], int len, int order);
 void mostrarListaDeActores(eActor actores[],int ta);
 int sortPeliculas(ePelicula list[], int len, int order);
 void hardcodearFecha(eFecha estreno[], int tam, int indice);
+void mostrarUSA(ePelicula lista[],int tam,eActor listaActor[],int ta);
+void mostarGenero(ePelicula list[],int tam, eGenero listaGenero[],int TG);

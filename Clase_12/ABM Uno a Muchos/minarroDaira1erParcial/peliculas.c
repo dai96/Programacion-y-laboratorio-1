@@ -95,14 +95,7 @@ void mostrarPelicula(ePelicula una, eActor actores[], int ta, eGenero generos[],
                 break;
             }
         }
-
-
-
-        if (una.estado==OCUPADO)
-        {
-            printf("%d %s %s %s %d %d %d \n", una.id,una.titulo, nombres, genero,una.estrenos.dia, una.estrenos.mes,una.estrenos.anio);
-        }
-
+            printf("%d\t%s\t%s\t%s\t%d - %d - %d \n", una.id,una.titulo, nombres, genero,una.estrenos.dia, una.estrenos.mes,una.estrenos.anio);
     }
 
 
@@ -152,7 +145,7 @@ void hardcodearPeliculas(ePelicula lista[], int tam, eFecha estrenos[])
         strcpy(lista[i].titulo, titulo[i]);
         lista[i].estado = OCUPADO;
         lista[i].idActor = actor[i];
-        lista[i].idGenero = actor[i];
+        lista[i].idGenero = genero[i];
         lista[i].estrenos=estrenos[i];
         lista[i].estrenos.dia=dia[i];
         lista[i].estrenos.mes=mes[i];
@@ -399,7 +392,7 @@ void mostrarListaDeActores(eActor actores[],int ta)
     int i;
     for (i=0;i<ta;i++)
     {
-        printf("\n%d %s %s",actores[i].idActor,actores[i].nombre,actores[i].nacionalidad);
+        printf("\n%d - %s - %s",actores[i].idActor,actores[i].nombre,actores[i].nacionalidad);
         printf("\n");
     }
 }
@@ -442,3 +435,74 @@ int sortPeliculas(ePelicula list[], int len, int order)
 
     return 0;
 }
+
+void mostrarUSA(ePelicula lista[],int tam,eActor listaActor[],int TA)
+{
+    int i,j;
+    char nombre[100];
+
+    for (j=0;j<TA;j++)
+    {
+        if(stricmp(listaActor[j].nacionalidad,"EEUU")==0)
+        {
+            for (i=0;i<tam;i++)
+            {
+                if (lista[i].estado==OCUPADO)
+                 {
+                     if (lista[i].idActor==listaActor[j].idActor)
+
+                    {
+                        strcpy(nombre,listaActor[j].nombre);
+                        printf("\n%d - %s - %s - %s",lista[i].id,lista[i].titulo,nombre,listaActor[j].nacionalidad);
+
+                    }
+                 }
+
+
+            }
+        }
+
+
+
+    }
+}
+
+void mostarGenero(ePelicula list[],int tam, eGenero listaGenero[],int TG)
+{
+    int i,j,x;
+    int contador=0,min=100;
+    char nombre[100],auxMin[30][30];
+
+    for (j=0;j<TG;j++)
+    {
+        printf("\n%s\n",listaGenero[j].descripcion);
+            for (i=0;i<tam;i++)
+            {
+                if (list[i].estado==OCUPADO)
+                 {
+                     if(list[i].idGenero==listaGenero[j].idGenero)
+                     {
+                         printf("%d %s\n",list[i].id,list[i].titulo);
+                         contador++;
+                     }
+                 }
+
+
+            }
+            printf("\nCantidad de peliculas en este genero:%d\n",contador);
+
+
+              if (contador<min)
+              {
+                    min=contador;
+                    strcpy(auxMin[x],listaGenero[j].descripcion);
+                }
+
+
+            contador=0;
+        }
+
+    //printf("\nEl genero con menos peliculas es %s\n",auxMin);
+
+    }
+
